@@ -1,2 +1,2 @@
 # LitCode
-Deployed Link - https://lit-depths-97168.herokuapp.com/
+Deployed Link - https://litcode-singhankit62000.herokuapp.com/
