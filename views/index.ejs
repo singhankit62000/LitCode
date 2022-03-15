@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/27a6451b4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- stylesheet -->
+    <link href = "css/style.css" rel="stylesheet">
+    <title>LitCode</title>
+</head>
+<body>
+
+ <header>
+     <div class="logo">
+         <h1>LitCode</h1>
+     </div>
+
+     <div class="search-div">
+         <input class="search-box" type="text" name="" id="" placeholder="Enter ID">
+     </div>
+
+ </header>  
+ 
+ <form method="post" action="/">
+    <select name="language" class="lang-field">
+        <option value="<%=language%>" selected><%=language%></option> 
+        <option value="C++">C++</option>
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Kotlin">Kotlin</option>
+        <option value="Swift">Swift</option>
+        <option value="Ruby">Ruby</option>
+        
+    </select>
+    <div class="container">
+    
+        <div class="left-panel">
+
+            <textarea class="code-area" name="codeText" id="code" spellcheck="false" placeholder="Enter code here..."><%= codeText %></textarea>
+            <div class="code-btns">
+                <button class="share"><i class="fas fa-share-alt-square"></i></button>
+                <button class="run" id="runBtn" for="code" type="submit">Run <i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+
+            <div class="input-div">
+                <h3 class="input-head">Input</h3>
+                <textarea id="input-area" spellcheck="false" name="inputText"><%= inputText %></textarea>
+            </div>
+
+            <div class="output-div">
+                <h3 class="output-head">Output</h3>
+                <textarea id="output-area" spellcheck="false"><%= outputText %></textarea>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+ <script src="../index.js"></script>
+ 
+</body>
+
+</html>
